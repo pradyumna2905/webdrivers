@@ -111,7 +111,7 @@ module Webdrivers
         end
 
         # Default to Google Chrome
-        executable = `which google-chrome`.strip
+        executable = `which chromedriver`.strip
         Webdrivers.logger.debug "Browser executable: '#{executable}'"
         `#{executable} --product-version`.strip
       end
